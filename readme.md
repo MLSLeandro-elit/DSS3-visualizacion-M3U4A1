@@ -36,7 +36,7 @@ Este proyecto es una aplicación web para visualizar y analizar datos de juegos 
 
 ## Estructura del Proyecto
 
-```
+```bash
 proyecto-visualizacion/
 ├── index.html                   # Página principal que aloja todas las visualizaciones
 ├── css/
@@ -52,28 +52,18 @@ proyecto-visualizacion/
 ## Instalación y Uso
 
 1. Clona este repositorio:
-   ```
-   git clone https://github.com/tu-usuario/dashboard-juegos-android.git
+
+   ```bash
+   git clone https://github.com/MLSLeandro-elit/DSS3-visualizacion-M3U4A1.git
    ```
 
 2. Navega al directorio del proyecto:
-   ```
-   cd dashboard-juegos-android
+
+   ```bash
+   cd DSS3-visualizacion-M3U4A1
    ```
 
-3. Puedes ejecutar el proyecto de varias formas:
-   - Abriendo `index.html` directamente en un navegador (solo funcionará con algunos navegadores debido a restricciones CORS)
-   - Utilizando un servidor web local como Live Server de VS Code
-   - Con Python:
-     ```
-     python -m http.server
-     ```
-   - Con Node.js:
-     ```
-     npx serve
-     ```
-
-4. Accede a la aplicación en tu navegador (típicamente en `http://localhost:8000` o similar dependiendo del servidor utilizado)
+3. Abre el archivo `index.html` directamente en tu navegador para visualizar el dashboard.
 
 ## Origen de los Datos
 
@@ -86,23 +76,3 @@ Los datos utilizados en este dashboard provienen de un dataset limpio y procesad
 - Ventas por región (US, EU, JP)
 - Ventas globales
 - Precios y modelo de monetización (gratuito/pago)
-
-El proceso de limpieza y preparación de los datos está documentado en los archivos `limpieza_datos_output.txt` y `exploracion_datos_android_games_20250322_140624.txt`.
-
-## Contribuciones
-
-Las contribuciones son bienvenidas. Para contribuir:
-
-1. Haz un fork del proyecto
-2. Crea una rama para tu característica (`git checkout -b feature/nueva-caracteristica`)
-3. Haz commit de tus cambios (`git commit -m 'Añadir nueva característica'`)
-4. Haz push a la rama (`git push origin feature/nueva-caracteristica`)
-5. Abre un Pull Request
-
-## Licencia
-
-Este proyecto está licenciado bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
-
-## Contacto
-
-Si tienes preguntas o sugerencias, no dudes en contactar a través de [tu-email@ejemplo.com](mailto:tu-email@ejemplo.com) o abrir un issue en este repositorio.
