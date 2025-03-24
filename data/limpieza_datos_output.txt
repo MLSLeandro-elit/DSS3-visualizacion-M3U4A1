@@ -1,0 +1,148 @@
+LIMPIEZA DE DATOS - ANDROID GAME SALES
+==================================================
+Dataset cargado: 1730 filas, 20 columnas
+
+Tipos de datos originales:
+title                object
+rank                  int64
+total_ratings        object
+installs             object
+average rating        int64
+growth (30 days)     object
+growth (60 days)    float64
+price               float64
+category             object
+5_star_ratings        int64
+4 star ratings       object
+3 star ratings        int64
+2 star ratings        int64
+1 star ratings        int64
+paid                 object
+US_Sales              int64
+EU_Sales              int64
+JP_Sales              int64
+Global_Sales          int64
+Unnamed: 19         float64
+dtype: object
+
+Columna 'Unnamed: 19' eliminada
+
+Convirtiendo columnas a formato numérico:
+- 'total_ratings' convertido a numérico
+- 'installs' convertido (ejemplos):
+  500.0 M → 500000000.0
+  500.0 M → 500000000.0
+  100.0 M → 100000000.0
+  100.0 M → 100000000.0
+  500.0 M → 500000000.0
+- 'growth (30 days)' convertido a numérico
+- '4 star ratings' convertido a numérico
+
+Corregidos 2 valores inconsistentes en 'category'
+Corregidos 2 valores inconsistentes en 'paid'
+
+Resumen después de la limpieza:
+- Dimensiones: 1730 filas, 19 columnas
+
+Valores nulos por columna:
+total_ratings       2
+installs            2
+growth (30 days)    2
+category            2
+4 star ratings      2
+paid                2
+dtype: int64
+
+Tipos de datos después de la limpieza:
+title                object
+rank                  int64
+total_ratings       float64
+installs            float64
+average rating        int64
+growth (30 days)    float64
+growth (60 days)    float64
+price               float64
+category             object
+5_star_ratings        int64
+4 star ratings      float64
+3 star ratings        int64
+2 star ratings        int64
+1 star ratings        int64
+paid                 object
+US_Sales              int64
+EU_Sales              int64
+JP_Sales              int64
+Global_Sales          int64
+dtype: object
+
+Estadísticas descriptivas después de la limpieza:
+                   count          mean           std       min         25%  \
+rank              1730.0  5.038671e+01  2.893674e+01       1.0       25.00   
+total_ratings     1728.0  1.065303e+06  3.431115e+06   32993.0   176323.75   
+installs          1728.0  2.920677e+07  6.031547e+07  100000.0  5000000.00   
+average rating    1730.0  2.648000e+02  8.001713e+03       2.0        4.00   
+growth (30 days)  1728.0  3.221076e+02  6.022389e+03       0.0        0.10   
+growth (60 days)  1730.0  1.225584e+02  2.253892e+03       0.0        0.20   
+price             1730.0  1.157803e-02  2.157730e-01       0.0        0.00   
+5_star_ratings    1730.0  7.620249e+05  2.538713e+06       0.0   127309.75   
+4 star ratings    1728.0  1.165506e+05  3.023191e+05    2451.0    20665.00   
+3 star ratings    1730.0  5.726101e+04  1.495821e+05     718.0     9667.00   
+2 star ratings    1730.0  2.712088e+04  8.154276e+04     266.0     4284.25   
+1 star ratings    1730.0  1.014820e+05  4.083769e+05     545.0    12812.00   
+US_Sales          1730.0  4.984387e+05  2.918440e+05     449.0   240058.75   
+EU_Sales          1730.0  4.846150e+05  2.889249e+05    3074.0   231569.50   
+JP_Sales          1730.0  4.988162e+05  2.861410e+05     296.0   250297.25   
+Global_Sales      1730.0  4.976956e+05  2.895303e+05       2.0   239445.25   
+
+                         50%          75%           max  
+rank                    50.0        75.00  1.000000e+02  
+total_ratings       428951.5    883923.75  8.627313e+07  
+installs          10000000.0  50000000.00  1.000000e+09  
+average rating           4.0         4.00  2.926300e+05  
+growth (30 days)         0.5         1.70  2.271057e+05  
+growth (60 days)         1.0         3.30  6.944140e+04  
+price                    0.0         0.00  7.490000e+00  
+5_star_ratings      296434.0    619835.75  6.354677e+07  
+4 star ratings       51015.0    101988.50  5.404966e+06  
+3 star ratings       25292.5     52574.75  3.158756e+06  
+2 star ratings       10695.0     23280.25  2.122183e+06  
+1 star ratings       33640.0     80157.25  1.249592e+07  
+US_Sales            502252.0    745408.50  9.995280e+05  
+EU_Sales            474146.5    723641.75  9.996540e+05  
+JP_Sales            496213.0    735543.50  9.988120e+05  
+Global_Sales        508171.5    752963.00  9.997960e+05  
+
+Primeras 5 filas después de la limpieza:
+                                          title  rank  total_ratings     installs  average rating  growth (30 days)  growth (60 days)  price     category  5_star_ratings  4 star ratings  3 star ratings  2 star ratings  1 star ratings   paid  US_Sales  EU_Sales  JP_Sales  Global_Sales
+0                Garena Free Fire- World Series     1     86273129.0  500000000.0               4               2.1               6.9    0.0  GAME_ACTION        63546766       4949507.0         3158756         2122183        12495915  False     24400    984292    515778        774192
+1                        PUBG MOBILE - Traverse     2     37276732.0  500000000.0               4               1.8               3.6    0.0  GAME_ACTION        28339753       2164478.0         1253185          809821         4709492  False    743331    549914    558222        911860
+2                     Mobile Legends: Bang Bang     3     26663595.0  100000000.0               4               1.5               3.2    0.0  GAME_ACTION        18777988       1812094.0         1050600          713912         4308998  False    795147    987939    763524        607676
+3                                   Brawl Stars     4     17971552.0  100000000.0               4               1.4               4.4    0.0  GAME_ACTION        13018610       1552950.0          774012          406184         2219794  False    634661    789793    102627        703545
+4  Sniper 3D: Fun Free Online FPS Shooting Game     5     14464235.0  500000000.0               4               0.8               1.5    0.0  GAME_ACTION         9827328       2124154.0         1047741          380670         1084340  False     61273     40628    932580        728941
+
+==================================================
+RESUMEN DE CAMBIOS REALIZADOS:
+==================================================
+Columnas eliminadas: Unnamed: 19
+
+Cambios en tipos de datos:
+- total_ratings: object → float64
+- installs: object → float64
+- growth (30 days): object → float64
+- 4 star ratings: object → float64
+
+Valores corregidos:
+- En 'category': 2 valores
+- En 'paid': 2 valores
+
+Nuevos valores nulos generados durante la limpieza:
+- total_ratings: 2 nuevos valores nulos
+- installs: 2 nuevos valores nulos
+- growth (30 days): 2 nuevos valores nulos
+- category: 2 nuevos valores nulos
+- 4 star ratings: 2 nuevos valores nulos
+- paid: 2 nuevos valores nulos
+
+Directorio 'data' creado
+
+Dataset limpio guardado en: data/android_games_clean.csv

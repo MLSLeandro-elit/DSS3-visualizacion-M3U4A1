@@ -1,0 +1,384 @@
+EXPLORACIÓN DE DATOS ANDROID GAME SALES - 2025-03-22 14:06:24
+================================================================================
+Error al cargar el archivo: [Errno 2] No such file or directory: 'android_games_sales.csv'
+Archivo cargado desde ruta alternativa: ../db/android_games_sales.csv
+
+==================================================
+INFORMACIÓN BÁSICA DEL DATASET
+==================================================
+Dimensiones del dataset: 1730 filas, 20 columnas
+
+Primeras 5 filas del dataset:
+                                          title  rank total_ratings installs  average rating growth (30 days)  growth (60 days)  price     category  5_star_ratings 4 star ratings  3 star ratings  2 star ratings  1 star ratings   paid  US_Sales  EU_Sales  JP_Sales  Global_Sales  Unnamed: 19
+0                Garena Free Fire- World Series     1      86273129  500.0 M               4              2.1               6.9    0.0  GAME_ACTION        63546766        4949507         3158756         2122183        12495915  FALSE     24400    984292    515778        774192          NaN
+1                        PUBG MOBILE - Traverse     2      37276732  500.0 M               4              1.8               3.6    0.0  GAME_ACTION        28339753        2164478         1253185          809821         4709492  FALSE    743331    549914    558222        911860          NaN
+2                     Mobile Legends: Bang Bang     3      26663595  100.0 M               4              1.5               3.2    0.0  GAME_ACTION        18777988        1812094         1050600          713912         4308998  FALSE    795147    987939    763524        607676          NaN
+3                                   Brawl Stars     4      17971552  100.0 M               4              1.4               4.4    0.0  GAME_ACTION        13018610        1552950          774012          406184         2219794  FALSE    634661    789793    102627        703545          NaN
+4  Sniper 3D: Fun Free Online FPS Shooting Game     5      14464235  500.0 M               4              0.8               1.5    0.0  GAME_ACTION         9827328        2124154         1047741          380670         1084340  FALSE     61273     40628    932580        728941          NaN
+
+==================================================
+TIPOS DE DATOS
+==================================================
+title                object
+rank                  int64
+total_ratings        object
+installs             object
+average rating        int64
+growth (30 days)     object
+growth (60 days)    float64
+price               float64
+category             object
+5_star_ratings        int64
+4 star ratings       object
+3 star ratings        int64
+2 star ratings        int64
+1 star ratings        int64
+paid                 object
+US_Sales              int64
+EU_Sales              int64
+JP_Sales              int64
+Global_Sales          int64
+Unnamed: 19         float64
+dtype: object
+
+==================================================
+VALORES NULOS
+==================================================
+Cantidad de valores nulos por columna:
+Unnamed: 19    1730
+dtype: int64
+
+Porcentaje de valores nulos por columna:
+Unnamed: 19    100.0
+dtype: float64
+
+==================================================
+ESTADÍSTICAS DESCRIPTIVAS
+==================================================
+                   count unique        top  freq           mean  \
+title               1730   1675  Solitaire    34            NaN   
+rank              1730.0    NaN        NaN   NaN      50.386705   
+total_ratings       1730   1699    1590733     4            NaN   
+installs            1730     11     10.0 M   805            NaN   
+average rating    1730.0    NaN        NaN   NaN          264.8   
+growth (30 days)    1730    188          0   269            NaN   
+growth (60 days)  1730.0    NaN        NaN   NaN     122.558439   
+price             1730.0    NaN        NaN   NaN       0.011578   
+category            1730     19  GAME_CARD   126            NaN   
+5_star_ratings    1730.0    NaN        NaN   NaN  762024.853179   
+4 star ratings      1730   1692     308402     4            NaN   
+3 star ratings    1730.0    NaN        NaN   NaN   57261.013295   
+2 star ratings    1730.0    NaN        NaN   NaN   27120.875723   
+1 star ratings    1730.0    NaN        NaN   NaN  101481.956647   
+paid                1730      4      FALSE  1721            NaN   
+US_Sales          1730.0    NaN        NaN   NaN  498438.694798   
+EU_Sales          1730.0    NaN        NaN   NaN  484615.043931   
+JP_Sales          1730.0    NaN        NaN   NaN  498816.219075   
+Global_Sales      1730.0    NaN        NaN   NaN  497695.574566   
+Unnamed: 19          0.0    NaN        NaN   NaN            NaN   
+
+                             std     min        25%       50%        75%  \
+title                        NaN     NaN        NaN       NaN        NaN   
+rank                   28.936742     1.0       25.0      50.0       75.0   
+total_ratings                NaN     NaN        NaN       NaN        NaN   
+installs                     NaN     NaN        NaN       NaN        NaN   
+average rating       8001.712994     2.0        4.0       4.0        4.0   
+growth (30 days)             NaN     NaN        NaN       NaN        NaN   
+growth (60 days)     2253.891518     0.0        0.2       1.0        3.3   
+price                   0.215773     0.0        0.0       0.0        0.0   
+category                     NaN     NaN        NaN       NaN        NaN   
+5_star_ratings    2538712.671739     0.0  127309.75  296434.0  619835.75   
+4 star ratings               NaN     NaN        NaN       NaN        NaN   
+3 star ratings     149582.089031   718.0     9667.0   25292.5   52574.75   
+2 star ratings      81542.763264   266.0    4284.25   10695.0   23280.25   
+1 star ratings     408376.947653   545.0    12812.0   33640.0   80157.25   
+paid                         NaN     NaN        NaN       NaN        NaN   
+US_Sales           291843.951871   449.0  240058.75  502252.0   745408.5   
+EU_Sales           288924.861952  3074.0   231569.5  474146.5  723641.75   
+JP_Sales           286140.996555   296.0  250297.25  496213.0   735543.5   
+Global_Sales       289530.296375     2.0  239445.25  508171.5   752963.0   
+Unnamed: 19                  NaN     NaN        NaN       NaN        NaN   
+
+                         max  
+title                    NaN  
+rank                   100.0  
+total_ratings            NaN  
+installs                 NaN  
+average rating      292630.0  
+growth (30 days)         NaN  
+growth (60 days)     69441.4  
+price                   7.49  
+category                 NaN  
+5_star_ratings    63546766.0  
+4 star ratings           NaN  
+3 star ratings     3158756.0  
+2 star ratings     2122183.0  
+1 star ratings    12495915.0  
+paid                     NaN  
+US_Sales            999528.0  
+EU_Sales            999654.0  
+JP_Sales            998812.0  
+Global_Sales        999796.0  
+Unnamed: 19              NaN  
+
+==================================================
+VARIABLES CATEGÓRICAS
+==================================================
+Columnas categóricas (7): ['title', 'total_ratings', 'installs', 'growth (30 days)', 'category', '4 star ratings', 'paid']
+
+Valores únicos en 'title': 1675
+Top 20 valores más frecuentes en 'title':
+title
+Solitaire                                          34
+Word Search                                         9
+Spider Solitaire                                    7
+Bubble Shooter                                      4
+Solitaire Classic                                   3
+Sudoku                                              2
+Real Racing 3                                       2
+The Simpsons™: Tapped Out                           2
+Operate Now: Hospital - Surgery Simulator Game      1
+Heroes Charge                                       1
+My Bakery Empire - Bake, Decorate & Serve Cakes     1
+Galaxy Legend - Cosmic Conquest Sci-Fi Game         1
+Brave Frontier                                      1
+Crusaders Quest                                     1
+레이븐 : LEGION                                        1
+Age of Warring Empire                               1
+Sky: Children of the Light                          1
+Game of Sultans                                     1
+MARVEL Strike Force - Squad RPG                     1
+Dragon Village                                      1
+Name: count, dtype: int64
+
+Valores únicos en 'total_ratings': 1699
+Top 20 valores más frecuentes en 'total_ratings':
+total_ratings
+1590733    4
+648068     4
+507250     4
+406124     4
+98872      3
+102434     3
+157757     3
+106773     3
+164757     3
+172895     3
+140758     2
+125561     2
+149858     2
+390612     2
+245912     2
+161284     2
+455543     2
+758951     1
+518434     1
+524462     1
+Name: count, dtype: int64
+
+Valores únicos en 'installs': 11
+Todos los valores en 'installs':
+installs
+10.0 M      805
+50.0 M      252
+5.0 M       244
+100.0 M     204
+1.0 M       192
+500.0 k      14
+500.0 M      12
+100.0 k       3
+1000.0 M      2
+Poker         1
+托福 輕鬆學        1
+Name: count, dtype: int64
+
+Valores únicos en 'growth (30 days)': 188
+Top 20 valores más frecuentes en 'growth (30 days)':
+growth (30 days)
+0      269
+0.1    234
+0.2    137
+0.3    114
+0.4     87
+0.5     74
+0.6     52
+0.8     46
+0.9     44
+0.7     43
+1.1     38
+1       36
+1.4     25
+1.5     25
+1.2     23
+1.8     23
+1.3     20
+1.7     20
+1.9     18
+2.1     17
+Name: count, dtype: int64
+
+Valores únicos en 'category': 19
+Todos los valores en 'category':
+category
+GAME_CARD            126
+GAME_WORD            104
+GAME_ACTION          100
+GAME_ARCADE          100
+GAME_ADVENTURE       100
+GAME_MUSIC           100
+GAME_BOARD           100
+GAME_RACING          100
+GAME_ROLE_PLAYING    100
+GAME_PUZZLE          100
+GAME_CASUAL          100
+GAME_SIMULATION      100
+GAME_SPORTS          100
+GAME_STRATEGY        100
+GAME_TRIVIA          100
+GAME_CASINO           99
+GAME_EDUCATIONAL      99
+1.1                    1
+0.9                    1
+Name: count, dtype: int64
+
+Valores únicos en '4 star ratings': 1692
+Top 20 valores más frecuentes en '4 star ratings':
+4 star ratings
+308402    4
+90350     4
+68177     4
+47121     4
+21789     3
+32009     3
+32551     3
+9155      3
+7238      3
+11772     3
+20067     2
+19491     2
+41967     2
+49159     2
+23103     2
+4766      2
+96142     2
+21050     2
+18644     2
+57146     2
+Name: count, dtype: int64
+
+Valores únicos en 'paid': 4
+Todos los valores en 'paid':
+paid
+FALSE    1721
+TRUE        7
+5187        1
+358         1
+Name: count, dtype: int64
+
+==================================================
+EJEMPLOS DE VALORES POR COLUMNA
+==================================================
+Columna 'title' - Ejemplos: ['Garena Free Fire- World Series' 'PUBG MOBILE - Traverse'
+ 'Mobile Legends: Bang Bang' 'Brawl Stars'
+ 'Sniper 3D: Fun Free Online FPS Shooting Game']
+Columna 'rank' - Ejemplos: ['1' '2' '3' '4' '5']
+Columna 'total_ratings' - Ejemplos: ['86273129' '37276732' '26663595' '17971552' '14464235']
+Columna 'installs' - Ejemplos: ['500.0 M' '500.0 M' '100.0 M' '100.0 M' '500.0 M']
+Columna 'average rating' - Ejemplos: ['4' '4' '4' '4' '4']
+Columna 'growth (30 days)' - Ejemplos: ['2.1' '1.8' '1.5' '1.4' '0.8']
+Columna 'growth (60 days)' - Ejemplos: ['6.9' '3.6' '3.2' '4.4' '1.5']
+Columna 'price' - Ejemplos: ['0.0' '0.0' '0.0' '0.0' '0.0']
+Columna 'category' - Ejemplos: ['GAME_ACTION' 'GAME_ACTION' 'GAME_ACTION' 'GAME_ACTION' 'GAME_ACTION']
+Columna '5_star_ratings' - Ejemplos: ['63546766' '28339753' '18777988' '13018610' '9827328']
+Columna '4 star ratings' - Ejemplos: ['4949507' '2164478' '1812094' '1552950' '2124154']
+Columna '3 star ratings' - Ejemplos: ['3158756' '1253185' '1050600' '774012' '1047741']
+Columna '2 star ratings' - Ejemplos: ['2122183' '809821' '713912' '406184' '380670']
+Columna '1 star ratings' - Ejemplos: ['12495915' '4709492' '4308998' '2219794' '1084340']
+Columna 'paid' - Ejemplos: ['FALSE' 'FALSE' 'FALSE' 'FALSE' 'FALSE']
+Columna 'US_Sales' - Ejemplos: ['24400' '743331' '795147' '634661' '61273']
+Columna 'EU_Sales' - Ejemplos: ['984292' '549914' '987939' '789793' '40628']
+Columna 'JP_Sales' - Ejemplos: ['515778' '558222' '763524' '102627' '932580']
+Columna 'Global_Sales' - Ejemplos: ['774192' '911860' '607676' '703545' '728941']
+
+==================================================
+ANÁLISIS DE DUPLICADOS
+==================================================
+Número de filas duplicadas: 0
+
+==================================================
+VARIABLES NUMÉRICAS
+==================================================
+Columnas numéricas (13): ['rank', 'average rating', 'growth (60 days)', 'price', '5_star_ratings', '3 star ratings', '2 star ratings', '1 star ratings', 'US_Sales', 'EU_Sales', 'JP_Sales', 'Global_Sales', 'Unnamed: 19']
+
+Rangos de variables numéricas:
+'rank': Min = 1, Max = 100
+'average rating': Min = 2, Max = 292630
+'growth (60 days)': Min = 0.0, Max = 69441.4
+'price': Min = 0.0, Max = 7.49
+'5_star_ratings': Min = 0, Max = 63546766
+'3 star ratings': Min = 718, Max = 3158756
+'2 star ratings': Min = 266, Max = 2122183
+'1 star ratings': Min = 545, Max = 12495915
+'US_Sales': Min = 449, Max = 999528
+'EU_Sales': Min = 3074, Max = 999654
+'JP_Sales': Min = 296, Max = 998812
+'Global_Sales': Min = 2, Max = 999796
+'Unnamed: 19': Min = nan, Max = nan
+
+==================================================
+POSIBLES COLUMNAS NUMÉRICAS ALMACENADAS COMO TEXTO
+==================================================
+'title' podría contener valores numéricos con formato especial: ['Garena Free Fire- World Series' 'PUBG MOBILE - Traverse'
+ 'Mobile Legends: Bang Bang' 'Brawl Stars'
+ 'Sniper 3D: Fun Free Online FPS Shooting Game']
+'installs' podría contener valores numéricos con formato especial: ['500.0 M' '500.0 M' '100.0 M' '100.0 M' '500.0 M']
+'category' podría contener valores numéricos con formato especial: ['GAME_ACTION' 'GAME_ACTION' 'GAME_ACTION' 'GAME_ACTION' 'GAME_ACTION']
+
+==================================================
+ANÁLISIS DE LONGITUD DE TEXTOS
+==================================================
+Columna 'title':
+  - Longitud mínima: 2
+  - Longitud máxima: 50
+  - Longitud promedio: 24.46
+Columna 'total_ratings':
+  - Longitud mínima: 2
+  - Longitud máxima: 8
+  - Longitud promedio: 6.11
+Columna 'installs':
+  - Longitud mínima: 5
+  - Longitud máxima: 8
+  - Longitud promedio: 5.88
+Columna 'growth (30 days)':
+  - Longitud mínima: 1
+  - Longitud máxima: 8
+  - Longitud promedio: 2.73
+Columna 'category':
+  - Longitud mínima: 3
+  - Longitud máxima: 17
+  - Longitud promedio: 11.76
+Columna '4 star ratings':
+  - Longitud mínima: 4
+  - Longitud máxima: 16
+  - Longitud promedio: 5.16
+Columna 'paid':
+  - Longitud mínima: 3
+  - Longitud máxima: 5
+  - Longitud promedio: 4.99
+
+==================================================
+RESUMEN Y OBSERVACIONES INICIALES
+==================================================
+- Dataset con 1730 filas y 20 columnas
+- Columnas categóricas: 7
+- Columnas numéricas: 13
+
+Problemas potenciales identificados:
+- Valores nulos en 1 columnas
+- No se detectaron filas duplicadas
+- Posibles problemas de formato en columnas: ['title', 'installs', 'category']
+
+==================================================
+FIN DE LA EXPLORACIÓN INICIAL
+==================================================
+Reporte guardado en: resultados_exploracion/exploracion_datos_android_games_20250322_140624.txt
