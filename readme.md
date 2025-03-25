@@ -8,8 +8,6 @@ Este proyecto es una aplicación web para visualizar y analizar datos de juegos 
 * Angelica Norato
 * Giovanni Ortega
 
-![Dashboard Preview](./img/img.png)
-
 ## Características
 
 * **Visualizaciones Interactivas**: Gráficos dinámicos que permiten explorar los datos desde múltiples perspectivas
@@ -26,6 +24,9 @@ Este proyecto es una aplicación web para visualizar y analizar datos de juegos 
 4. **Instalaciones vs. Total Ratings**: Correlación entre número de instalaciones y valoraciones recibidas
 5. **Top 10 Instalaciones por Categoría**: Juegos más instalados en cada categoría seleccionada
 6. **Instalaciones vs Ventas Globales**: Análisis de la relación entre instalaciones y ventas
+
+> Ejemplo
+> ![Dashboard Preview](./img/img.png)
 
 ## Tecnologías Utilizadas
 
